@@ -10,6 +10,11 @@ Route::get('/', function () {
     ]);
 })->name('home');
 
+Route::get('Home', function () {
+    return Inertia::render(component: 'Home');
+     })
+     ->name('Home');
+
 Route::get('dashboard', function () {
     return Inertia::render('Dashboard');
      })
